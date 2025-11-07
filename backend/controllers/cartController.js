@@ -2,7 +2,6 @@ import CartItem from "../models/CartItem.js";
 import Product from "../models/Product.js";
 import getMockUser from "../mockUser.js";
 
-// Helper to get, format, and calculate the cart for a user
 const getCartForUser = async (userId) => {
   const items = await CartItem.find({ userId }).populate("productId");
 

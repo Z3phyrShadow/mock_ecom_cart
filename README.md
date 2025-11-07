@@ -107,8 +107,6 @@ This implementation fulfills all the core requirements of the assignment.
 
 ## Screenshots
 
-*(Placeholder for screenshots)*
-
 **Product Listing Page**
 ![Product Listing Page](./screenshots/product-list.png)
 
@@ -129,7 +127,5 @@ This implementation fulfills all the core requirements of the assignment.
 | POST   | `/api/checkout`      | Processes the checkout and returns a receipt.   |
 
 ## Demo Video
-
-*(Placeholder for demo video link)*
 
 -   [Link to Unlisted YouTube/Loom Video]()

@@ -26,8 +26,6 @@ const getMockUser = async () => {
     return user;
   } catch (error) {
     console.error("❌ Error getting or creating mock user:", error.message);
-    // In a real app, you'd handle this more gracefully.
-    // For this mock setup, we'll exit if we can't get a user.
     process.exit(1);
   }
 };

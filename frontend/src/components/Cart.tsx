@@ -20,7 +20,7 @@ const Cart: React.FC = () => {
 
   const handleRemove = async (id: string) => {
     const res = await axios.delete(`http://localhost:5000/api/cart/${id}`);
-    setCart(res.data); // The backend now returns the updated cart
+    setCart(res.data); 
   };
 
   const debouncedUpdate = useCallback(
@@ -36,7 +36,6 @@ const Cart: React.FC = () => {
   );
 
   const handleQuantityChange = (id: string, newQty: number) => {
-    // Optimistically update the UI
     setCart(prevCart => {
       const updatedItems = prevCart.items.map(item =>
         item.id === id ? { ...item, qty: newQty, lineTotal: item.product.price * newQty } : item
