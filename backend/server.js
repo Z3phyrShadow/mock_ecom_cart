@@ -4,7 +4,6 @@ import cors from "cors";
 import connectDB from "./db.js";
 import productRoutes from "./routes/productRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
-import seedProducts from "./seed.js";
 
 
 dotenv.config();
@@ -21,7 +20,7 @@ app.get("/", (req, res) => {
   res.send("Mock E-Com Cart API is running...");
 });
 
-connectDB().then(seedProducts);
+connectDB();
 
 
 const PORT = process.env.PORT || 5000;

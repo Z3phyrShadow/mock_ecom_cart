@@ -10,9 +10,7 @@ const connectDB = async () => {
     const conn = await mongoose.connect(uri);
     console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
 
-    // Seed products after connecting
     await seedProducts();
-    // Ensure mock user exists
     await getMockUser();
   } catch (error) {
     console.error(`❌ DB Connection Error: ${error.message}`);
