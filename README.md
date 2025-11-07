@@ -116,7 +116,7 @@ This implementation fulfills all the core requirements of the assignment.
 ![Shopping Cart View](./screenshots/cart-view.png)
 
 **Checkout Modal**
-![Checkout Modal](./screenshots.checkout-modal.png)
+![Checkout Modal](./screenshots/checkout-modal.png)
 
 ## API Endpoints
 
