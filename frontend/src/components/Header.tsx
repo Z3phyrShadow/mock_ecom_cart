@@ -7,8 +7,8 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">E-commerce</h1>
         <nav>
-          <NavLink to="/" className={({ isActive }) => "mr-4 " + (isActive ? 'text-blue-400 underline' : '')}>Home</NavLink>
-          <NavLink to="/cart" className={({ isActive }) => (isActive ? 'text-blue-400 underline' : '')}>Cart</NavLink>
+          <NavLink to="/" className={({ isActive }) => "mr-4 " + (isActive ? 'border-b-2 border-blue-400' : '')}>Home</NavLink>
+          <NavLink to="/cart" className={({ isActive }) => (isActive ? 'border-b-2 border-blue-400' : '')}>Cart</NavLink>
         </nav>
       </div>
     </header>
